@@ -1,0 +1,7 @@
+<h1>New picture!</h1>
+<%= flash[:error] %>
+<%= form_for(@pic) do |f| %>
+	<%= f.text_field :title %>
+	<%= f.text_field :url %>
+	<%= f.submit %>
+<% end %>

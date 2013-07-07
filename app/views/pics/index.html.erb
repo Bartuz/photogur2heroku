@@ -1,0 +1,6 @@
+<h1>Pics!</h1>
+<%= link_to "New picture", new_pic_path %>
+<% @pics.each do |pic| %>
+	<h2><%= pic.title %></h2>
+	<%= link_to image_tag(pic.url), pic_path(pic.id) %>
+<% end %>
